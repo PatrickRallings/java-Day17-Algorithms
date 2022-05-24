@@ -12,5 +12,10 @@ public class Main {
         quick1.sort();
         quick2.sort();
 
+        //Search Pattern
+        SearchPattern searchPat1 = new SearchPattern("batmanandrobinarebat", "bat");
+        SearchPattern searchPat2 = new SearchPattern("abesdu", "edu");
+        searchPat1.search();
+        searchPat2.search();
     }
 }
