@@ -1,12 +1,16 @@
 import java.util.Arrays;
 
 public class BubbleSort {
-    public static int sortedCount = 0;
-    public static void main(String[] args){
-//        int[] nums = {4, 1, 3, 9, 7};
-        int[] nums = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        System.out.println("Before Sort: "+Arrays.toString(nums));
-        //Below: O(n^2)
+    public int[] nums;
+    private static int sortedCount = 0;
+
+    public BubbleSort(int... nums){
+        this.nums = nums;
+    }
+
+    public String sort(){
+        String s = "Before Sort: "+Arrays.toString(nums);
+        //O(n^2)
     while(!(sortedCount == nums.length-1)){
         sortedCount = 0;
         for (int i = 0; i < nums.length-1; i++){
@@ -18,8 +22,7 @@ public class BubbleSort {
                 sortedCount++;
             }
         }
-    }
-        System.out.println("After Sort: "+Arrays.toString(nums));
-
+    }   s += "\nAfter Sort: "+Arrays.toString(nums);
+        return s;
     }
 }
