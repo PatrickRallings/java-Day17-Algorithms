@@ -9,7 +9,7 @@ public class BubbleSort {
     }
 
     public String sort(){
-        String s = "Before Sort: "+Arrays.toString(nums);
+        String s = "Before Bubble Sort: "+Arrays.toString(nums);
         //O(n^2)
     while(!(sortedCount == nums.length-1)){
         sortedCount = 0;
@@ -22,7 +22,7 @@ public class BubbleSort {
                 sortedCount++;
             }
         }
-    }   s += "\nAfter Sort: "+Arrays.toString(nums);
+    }   s += "\nAfter Bubble Sort: "+Arrays.toString(nums);
         return s;
     }
 }
